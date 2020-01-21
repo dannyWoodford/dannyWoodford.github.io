@@ -12,7 +12,7 @@ export default class Sketch {
     this.gl = this.canvas.getContext('webgl');
     this.ratio = window.devicePixelRatio;
     this.windowWidth = window.innerWidth;
-    this.windowHeight = window.innerHeight;
+    this.windowHeight = 2000;
     this.mouseX = 0;
     this.mouseY = 0;
 
