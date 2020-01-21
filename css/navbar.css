@@ -13,10 +13,11 @@
     width: 100%;
     left: 0px;
     top: 0px;
-    height: 10vh;
+    height: 80px;
     position: fixed;
     line-height: 10vh;
     text-align: center;
+    z-index: 2;
 }
 
 .nav div.logo {
@@ -24,6 +25,7 @@
     width: auto;
     height: auto;
     padding-left: 4rem;
+    
 }
 
 .nav div.logo a {
@@ -334,6 +336,8 @@
 .affix {
     padding: 0;
     background-color: #111;
+    position: fixed;
+    z-index: 2;
 }
 
 

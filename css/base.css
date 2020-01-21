@@ -13,20 +13,21 @@ body {
 
 	--color-link: #5a4eff;
 	--color-link-hover: #fff;
-	color: #aaa7a7;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.74),rgb(0, 0, 0), rgb(0, 0, 0));
+	color: #ffffff;
+  background: linear-gradient(to top, rgba(173, 172, 172, 0.74),rgb(144, 132, 132), rgb(255, 255, 255));
 	font-family: moderno-fb, "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
+    height: 2000px;
 }
 
 
 #gl {
 	width: 100vw;
-	height: 100vh;
+	height: 2000px;
 	left: 0;
-	top: 0;
+	top: 0%;
     position: absolute;
     /* filter: blur(10px) */
 }
@@ -39,7 +40,7 @@ canvas {
 .js .loading::before {
 	content: '';
 	position: fixed;
-	z-index: 100000;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -50,7 +51,7 @@ canvas {
 .js .loading::after {
 	content: '';
 	position: fixed;
-	z-index: 100000;
+	z-index: 100;
 	top: 50%;
 	left: 50%;
 	width: 60px;
@@ -89,7 +90,7 @@ a:focus {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10000;
+	z-index: 1;
 	text-align: center;
 }
 
@@ -97,7 +98,7 @@ a:focus {
 	padding: 3rem 5vw;
 	text-align: center;
 	position: relative;
-	z-index: 1000;
+	z-index: 1;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -123,10 +124,10 @@ a:focus {
 	mix-blend-mode: soft-light;
 	font-weight: normal;
 	text-align: center;
-    color: #ffffff;
+    color: #000000;
     grid-area: content;
     margin: 0;
-    z-index: 10000041
+    z-index: 11
 }
 
 
@@ -137,7 +138,7 @@ a:focus {
 	.frame {
 		position: static;
 		text-align: left;
-		z-index: 10000;
+		z-index: 10;
 		top: 0;
 		left: 0;
 		display: grid;
@@ -153,27 +154,10 @@ a:focus {
 							'content content'
 							'home home';
 	}
-
-
-
-    
     
 	.frame a {
         pointer-events: auto;
 	}
 }
-
-.frame__content a:hover {
-    color: rgb(94, 22, 22);
-    filter: blur(10px)
-}
-
-/* #backwall {
-    color: antiquewhite;
-} */
-
-
-
-
 
 

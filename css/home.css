@@ -1,0 +1,29 @@
+#home {
+    color: white;
+    position: sticky;
+    z-index: 1;
+    top: 700px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+#aboutSection {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#contactSection {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+}
