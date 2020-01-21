@@ -110,14 +110,11 @@ a:focus {
 	position: relative;
 }
 
-.frame a {
-	text-transform: lowercase;
-}
+
 
 
 .frame__content {
 	line-height: 0.8;
-	/* pointer-events: none; */
 	margin-top: 13vh;
 	font-size: 40vw;
 	font-family: essonnes-display, serif;

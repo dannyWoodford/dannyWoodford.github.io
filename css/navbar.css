@@ -17,7 +17,7 @@
     position: fixed;
     line-height: 10vh;
     text-align: center;
-    z-index: 2;
+    z-index: 20;
 }
 
 .nav div.logo {
@@ -337,7 +337,7 @@
     padding: 0;
     background-color: #111;
     position: fixed;
-    z-index: 2;
+    z-index: 20;
 }
 
 

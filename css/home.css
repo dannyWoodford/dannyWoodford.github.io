@@ -6,8 +6,8 @@
 
 #content {
     color: white;
-    /* top: 700px; */
-    height: 1100px;
+    top: 700px;
+    height: 1300px;
     /* bottom: 100; */
     position: absolute;
     z-index: 1;
@@ -38,6 +38,16 @@
 
 #contactSection h2 {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     margin-bottom: 0px;
+}
+
+#contactSection h3 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+#contactSection h3 a {
+    font-weight: bolder;
 }
