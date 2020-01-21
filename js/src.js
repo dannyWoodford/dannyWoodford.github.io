@@ -161,25 +161,25 @@ export default class Sketch {
 
 
   gyro() {
-    // this.calibrated = false;
+    this.calibrated = false;
     let that = this;
 
-    this.maxTilt = 15;
-    // setInterval(() => {
-    //   this.calibrated = false;
-    // },20000);
+    this.maxTilt = 25;
+    setInterval(() => {
+      this.calibrated = false;
+    },20000);
 
-    // window.addEventListener('deviceorientation', (e) => {
-    //   if(!this.calibrated) {
-    //     this.startBeta = e.beta.toFixed(2);
-    //     this.startGamma = e.gamma.toFixed(2);
-    //     this.calibrated = true;
-    //   }
-    //   // console.log(e.beta.toFixed(1),e.gamma.toFixed(1));
-    //   this.mouseTargetY = clamp(this.startBeta - e.beta,-this.maxTilt, this.maxTilt)/this.maxTilt;
-    //   this.mouseTargetX = -clamp(this.startGamma - e.gamma,-this.maxTilt, this.maxTilt)/this.maxTilt;
-    //   console.log(this.mouseTargetX.toFixed(1),this.mouseTargetY.toFixed(1));
-    // }, true);
+    window.addEventListener('deviceorientation', (e) => {
+      if(!this.calibrated) {
+        this.startBeta = e.beta.toFixed(2);
+        this.startGamma = e.gamma.toFixed(2);
+        this.calibrated = true;
+      }
+      console.log(e.beta.toFixed(1),e.gamma.toFixed(1));
+      this.mouseTargetY = clamp(this.startBeta - e.beta,-this.maxTilt, this.maxTilt)/this.maxTilt;
+      this.mouseTargetX = -clamp(this.startGamma - e.gamma,-this.maxTilt, this.maxTilt)/this.maxTilt;
+      console.log(this.mouseTargetX.toFixed(1),this.mouseTargetY.toFixed(1));
+    }, true);
 
     const rotationCoef = 0.15;
 
