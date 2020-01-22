@@ -6,14 +6,14 @@
 
 #content {
     color: white;
-    top: 700px;
-    height: 1300px;
+    top: 900px;
+    height: 1580px;
     /* bottom: 100; */
     position: absolute;
     z-index: 1;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 35% 60% 5%;
 }
 
 #aboutSection {
@@ -23,31 +23,42 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 100px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: x-large;
+    word-spacing: 5px;
+    /* filter: blur(5px); */
+}
+
+
+#portfolioSection {
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
 }
 
 #contactSection {
     width: 100%;
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 2;
     z-index: 1;
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-#contactSection h2 {
-    position: absolute;
-    bottom: 10%;
-    margin-bottom: 0px;
+    font-size: xx-large;
 }
 
 #contactSection h3 {
     position: absolute;
     bottom: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0%;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.3);
+    user-select: text
 }
 
 #contactSection h3 a {
     font-weight: bolder;
+    font-size: 2rem;
 }

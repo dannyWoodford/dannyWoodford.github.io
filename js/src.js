@@ -167,7 +167,7 @@ export default class Sketch {
     this.maxTilt = 25;
     setInterval(() => {
       this.calibrated = false;
-    },20000);
+    },2000);
 
     window.addEventListener('deviceorientation', (e) => {
       if(!this.calibrated) {

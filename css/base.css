@@ -10,26 +10,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-
-	--color-link: #5a4eff;
-	--color-link-hover: #fff;
+	--color-link: #ffffffb7;
+	--color-link-hover: rgb(0, 0, 0);
 	color: #ffffff;
   background: linear-gradient(to top, rgba(173, 172, 172, 0.74),rgb(144, 132, 132), rgb(255, 255, 255));
 	font-family: moderno-fb, "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
-    height: 2000px;
+    height: 2500px;
 }
 
 
 #gl {
 	width: 100vw;
-	height: 2000px;
+	height: 2500px;
 	left: 0;
 	top: 0%;
     position: absolute;
-    /* filter: blur(10px) */
 }
 
 canvas {
@@ -116,7 +114,7 @@ a:focus {
 .frame__content {
 	line-height: 0.8;
 	margin-top: 13vh;
-	font-size: 40vw;
+	font-size: 45vw;
 	font-family: essonnes-display, serif;
 	mix-blend-mode: soft-light;
 	font-weight: normal;
@@ -124,7 +122,8 @@ a:focus {
     color: #000000;
     grid-area: content;
     margin: 0;
-    z-index: 11
+    z-index: 11;
+    user-select: none
 }
 
 
