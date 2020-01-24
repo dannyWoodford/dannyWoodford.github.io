@@ -336,7 +336,7 @@
 
 .affix {
     padding: 0;
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgba(17, 17, 17, .97);
     position: fixed;
     z-index: 20;
 }

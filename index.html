@@ -11,13 +11,16 @@
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/navbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<link rel="stylesheet" type="text/css" href="css/glider.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 
 
 
 	<body >
-		<main>
+	
 
 			
 			<div class="frame">
@@ -28,7 +31,8 @@
 					data-horizontalThreshold="35" 
 					data-verticalThreshold="15">
 				</div>
-				
+				<div class="frame__content">W</div>
+			</div>
 
 					<nav class="nav">
 						<div class="container">
@@ -37,7 +41,7 @@
 							</div>
 							<div id="mainListDiv" class="main_list">
 								<ul class="navlinks">
-									<li><a href="#aboutSection" data-nav="about" >about</a></li>
+									<li><a href="#aboutLanding" data-nav="about" >about</a></li>
 									<li><a href="#portfolioSection" data-nav="portfolio" >portfolio</a></li>
 									<li><a href="Danny_Woodford_resume.pdf" data-nav="resume" target="_blank" >resume</a></li>
 									<li><a href="#contactSection" data-nav="contact" >contact</a></li>
@@ -50,19 +54,51 @@
 							</span>
 						</div>
 					</nav>
-					<div class="frame__content">W</div>
 				
 
 	
 
-				<div id="content">
+				<div id="home">
+					<div id="aboutLanding">
+					</div>
 					<div id="aboutSection">
 						<h1>About</h1>
 						<h3>Creative Ruby and JavaScript full stack developer with a propensity for visuals. Formerly renovated houses as a carpenter learning to see big jobs through from start to finish. Created the first cross-discipline collaboration event between DevOps, data science, and UX/UI at the Flatiron School. Art and stand-up comedy taught me both creativity and courage are muscles to be developed, lest they atrophy. </h3>
 					</div>
 
-					<div id="portfolioSection">
-						
+					<div id="portfolioSection" >
+						<div class="glider-contain multiple">
+								<button class="glider-prev" >
+									<i class="fa fa-chevron-left" ></i>
+								</button>
+
+									<div class='glider'>
+										<figure>
+											<blockquote>"this is bio about the project"</blockquote>
+											<figcaption>Danny Woodford</figcaption>
+										</figure>
+										<figure>
+											<blockquote>"this is bio about the project"</blockquote>
+											<figcaption>Danny Woodford</figcaption>
+										</figure>
+										<figure>
+											<blockquote>"this is bio about the project"</blockquote>
+											<figcaption>Danny Woodford</figcaption>
+										</figure>
+										<figure>
+											<blockquote>"this is bio about the project"</blockquote>
+											<figcaption>Danny Woodford</figcaption>
+										</figure>
+									</div>
+
+								<button class="glider-next" >
+									<i class="fa fa-chevron-right" ></i>
+								</button>
+							
+							<div id="dots" class="glider-dots"></div>
+
+						</div>
+
 					</div>
 					
 					<div id="contactSection">
@@ -72,9 +108,9 @@
 					</div>
 				</div>
 
-			</div>
+			
 
-		</main>
+		
 
 		
 
@@ -83,6 +119,8 @@
 		<script src="js/about.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/glider.min.js"></script>
+		<script src="js/slider.js"></script>
 	
 	<!-- Function used to shrink nav bar removing paddings and adding black background -->
 		<script>

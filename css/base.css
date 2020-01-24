@@ -13,19 +13,22 @@ body {
 	--color-link: #ffffffb7;
 	--color-link-hover: rgb(0, 0, 0);
 	color: #ffffff;
-  background: linear-gradient(to top, rgba(173, 172, 172, 0.74),rgb(144, 132, 132), rgb(255, 255, 255));
+  background: black;
 	font-family: moderno-fb, "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
-    height: 2500px;
+    height: 3000px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
 }
 
 
 #gl {
 	width: 100vw;
-	height: 2500px;
-	left: 0;
+	height: 3000px;
+	
 	top: 0%;
     position: absolute;
 }
@@ -38,7 +41,7 @@ canvas {
 .js .loading::before {
 	content: '';
 	position: fixed;
-	z-index: 100;
+	z-index: 3;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -49,7 +52,7 @@ canvas {
 .js .loading::after {
 	content: '';
 	position: fixed;
-	z-index: 100;
+	z-index: 3;
 	top: 50%;
 	left: 50%;
 	width: 60px;
@@ -81,19 +84,9 @@ a:focus {
 	outline: none;
 }
 
-.message {
-	background: var(--color-text);
-	color: var(--color-bg);
-	padding: 1rem;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-	text-align: center;
-}
 
 .frame {
-	padding: 3rem 5vw;
+	/* padding: 3rem ; */
 	text-align: center;
 	position: relative;
 	z-index: 1;
@@ -104,9 +97,9 @@ a:focus {
 	justify-content: center;
 }
 
-.frame > * {
+/* .frame > * {
 	position: relative;
-}
+} */
 
 
 
@@ -122,7 +115,7 @@ a:focus {
     color: #000000;
     grid-area: content;
     margin: 0;
-    z-index: 11;
+    z-index: 2;
     user-select: none
 }
 
@@ -134,7 +127,7 @@ a:focus {
 	.frame {
 		position: static;
 		text-align: left;
-		z-index: 10;
+		z-index: 1;
 		top: 0;
 		left: 0;
 		display: grid;
@@ -142,7 +135,6 @@ a:focus {
 		width: 100%;
 		max-width: none;
 		height: 100vh;
-		padding: 2rem 3rem;
 		pointer-events: none;
 		grid-template-columns: 100%;
 		grid-template-rows: auto auto auto;
