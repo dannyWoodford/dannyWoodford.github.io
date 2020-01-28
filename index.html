@@ -14,6 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="css/glider.min.css" />
 		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<link rel="stylesheet" type="text/css" href="css/projects.css" />
+
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 
@@ -24,13 +26,13 @@
 
 			
 			<div class="frame">
-				<div 
+				<!-- <div 
 					id="gl" 
 					data-imageOriginal="img/color_pg.jpg" 
 					data-imageDepth="img/background-map.jpg" 
 					data-horizontalThreshold="35" 
 					data-verticalThreshold="15">
-				</div>
+				</div> -->
 				<div class="frame__content">W</div>
 			</div>
 
@@ -43,8 +45,8 @@
 								<ul class="navlinks">
 									<li><a href="#aboutLanding" data-nav="about" >about</a></li>
 									<li><a href="#portfolioSection" data-nav="portfolio" >portfolio</a></li>
-									<li><a href="#portfolioSection" >projects</a></li>
-									<li><a href="#portfolioSection" >art</a></li>
+									<li><a href="#project-section" >projects</a></li>
+									<li><a href="#art-section" >art</a></li>
 									<li><a href="Danny_Woodford_resume.pdf" data-nav="resume" target="_blank" >resume</a></li>
 									<li><a href="#contactSection" data-nav="contact" >contact</a></li>
 								</ul>
@@ -83,23 +85,48 @@
 								</button>
 
 									<div class='glider'>
-										<figure>
-											<blockquote>"this is bio about the project"</blockquote>
-											<figcaption>Danny Woodford</figcaption>
+										<figure id="project-2">
+											<div id=project-2-text>
+												<h1>Spotify 3D music Visualizer </h1>
+												<h3>Utilized Three.js to create a 3d environment the user can move around in freely
+													Set up Spotify’s web playback SDK to allow login and music streaming  from any premium account  
+													Maped song analytics and features from Spotify’s API and synchronize that data to playback  
+													Built with react and has an unused rails backend to allow for future expansion 
+												</h3>
+	
+												<h2>
+													<a href="https://github.com/dannyWoodford/3D-spotify-visualizer-" target="_blank">Github</a> |
+													<a href="https://www.linkedin.com/feed/update/urn:li:activity:6611441975008735232/" target="_blank">Demo</a>
+												</h2>
+											</div>
 										</figure>
-										<figure>
-											<blockquote>"this is bio about the project"</blockquote>
-											<figcaption>Danny Woodford</figcaption>
-										</figure>
-										<figure>
-											<blockquote>"this is bio about the project"</blockquote>
-											<figcaption>Danny Woodford</figcaption>
-										</figure>
-										<figure>
-											<blockquote>"this is bio about the project"</blockquote>
-											<figcaption>Danny Woodford</figcaption>
-										</figure>
+										
+										<div id="project-1">
+											<h1>Spotify 3D music Visualizer </h1>
+											<h3>Utilized Three.js to create a 3d environment the user can move around in freely
+												Set up Spotify’s web playback SDK to allow login and music streaming  from any premium account  
+												Maped song analytics and features from Spotify’s API and synchronize that data to playback  
+												Built with react and has an unused rails backend to allow for future expansion 
+											</h3>
+
+											<h2>
+												<a href="https://github.com/dannyWoodford/3D-spotify-visualizer-" target="_blank">Github</a> |
+												<a href="https://www.linkedin.com/feed/update/urn:li:activity:6611441975008735232/" target="_blank">Demo</a>
+											</h2>
+
+										</div>
+
+									
+
+										<div id="project-3">
+
+										</div>
+
+										<div id="project-4">
+
+										</div>
 									</div>
+									
 
 								<button class="glider-next" >
 									<i class="fa fa-chevron-right" ></i>
@@ -110,11 +137,32 @@
 						</div>
 
 					</div>
+
+
+
+
+					<div id="project-section">
+						<div id="project-background">
+							<img src="img/curved-border-design.png" alt="background" >
+						</div>
+					</div>
+
+
+
+
+					<div id="art-section">
+						<div id="art-background">
+							<img src="img/curved-border-design.png" alt="background" >
+						</div>
+					</div>
 					
+
+
+
 					<div id="contactSection">
 						<h3>Greater New York area | 908-907-8680 | <a target="_blank">Daniel.woodford.g@gmail.com </a> | 
 							<a href="https://github.com/dannyWoodford" target="_blank">Github</a> | <a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank" >Linkedin</a> 
-							</h3>
+						</h3>
 					</div>
 				</div>
 
