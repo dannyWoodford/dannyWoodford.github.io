@@ -17,14 +17,48 @@
     grid-column: 2;
     grid-row: 2;
     display: inline-table;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#about-background{
+    position: absolute;
+    z-index: -2;
+    height: 35%;
+    width: 90%;
+}
+
+#about-background img{
+    opacity: 0.7;
+    filter: grayscale(90%);
+    height: 100%;
+    width: 100%;
+}
+
+#about-text {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    float: right;
+    width: 73%;
     padding: 5%;
-    background-color: rgba(0, 0, 0, 0.4);
     font-size: 3vh ;
     word-spacing: 5px;
-    /* filter: blur(5px); */
+}
+
+#profile-picture {
+    position: absolute;
+    z-index: 1;
+    border: 15px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 450px;
+    width: 450px;
+    margin-left: -3%;
+    margin-top: -3%;
+    float: left;
+
+    /* padding: 1%; */
 }
 
 
@@ -54,12 +88,77 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 0%;
-    font-size: 2rem;
+    font-size: 4vh;
     background-color: rgba(0,0,0,0.3);
     user-select: text
 }
 
 #contactSection h3 a {
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 4vh;
 }
+
+
+/* -----MEDIA QUERIES------------------------------------------------------------------ */
+
+
+@media screen and (max-width:768px) {
+    #home {
+        width: 100vw;
+        color: white;
+        top: 900px;
+        height: 2080px;
+        position: absolute;
+        z-index: 11;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 10% 35% 50% 5%;
+    }
+
+
+
+    #aboutSection {
+        grid-column: 2;
+        grid-row: 2;
+        display: inline-table;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #about-background{
+        position: absolute;
+        z-index: -2;
+        height: 35%;
+        width: 90%;
+    }
+
+    #about-background img{
+        opacity: 0.6;
+        filter: grayscale(90%);
+        height: 100%;
+        width: 100%;
+    }
+    #profile-picture {
+        position: absolute;
+        z-index: 101;
+        border-radius: 50%;
+        height: 300px;
+        width: 75%;
+        margin-left: 7.5%;
+        margin-top: -40%;
+        float: none;
+    }
+    
+    #about-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25%;
+        padding: 5%;
+        font-size: 3vh ;
+        word-spacing: 5px;
+        width: 100%
+    }
+    
+} 
