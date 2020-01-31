@@ -1,6 +1,6 @@
-let navBarlinks = document.querySelector('#mainListDiv .navlinks')
+let projectSection = document.querySelector('#project-section')
 
-navBarlinks.addEventListener("click", (event) => {
+projectSection.addEventListener("click", (event) => {
 
     if (event.target.dataset.nav === "about") {
         console.log("about link")

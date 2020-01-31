@@ -13,7 +13,7 @@ body {
 	--color-link: #ffffffb7;
 	--color-link-hover: rgb(0, 0, 0);
 	color: #ffffff;
-  background: rgb(170, 166, 166);
+  	background: rgb(227,159,45);
 	font-family: moderno-fb, "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -27,8 +27,7 @@ body {
 
 #gl {
 	width: 100vw;
-	height: 4780px;
-	
+	height: 100%;
 	top: 0%;
     position: absolute;
 }

@@ -1,0 +1,49 @@
+
+.portfolio{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.portfolio-text {
+    border-top: 4px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    grid-row: 2;
+    height: 100%;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 3vw;
+}
+
+.portfolio-description {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2vw;
+}
+
+.portfolio-links {
+    position: fixed;
+    padding-left: 1%;
+    bottom: 0%;
+    font-size: 30px;
+} 
+
+
+
+.portfolio-background{
+    grid-row: 1;
+    margin-top: 0rem;
+    background:  url(https://media.giphy.com/media/KD1eGw9xvrWxGr8cJL/giphy.gif) no-repeat center center fixed; 
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+} 
+
+
+
