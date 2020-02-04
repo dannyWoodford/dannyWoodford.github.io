@@ -13,7 +13,7 @@ body {
 	--color-link: #ffffffb7;
 	--color-link-hover: rgb(0, 0, 0);
 	color: #ffffff;
-  	background: rgb(227,159,45);
+  	background: #3e4444;
 	font-family: moderno-fb, "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -26,8 +26,8 @@ body {
 
 
 #gl {
-	width: 100vw;
-	height: 100%;
+	width: 100%;
+	height: 98vh;
 	top: 0%;
     position: absolute;
 }
@@ -96,27 +96,59 @@ a:focus {
 	justify-content: center;
 }
 
-/* .frame > * {
-	position: relative;
-} */
 
 
 
 
 .frame__content {
-	line-height: 0.8;
-	margin-top: 13vh;
-	font-size: 45vw;
-	font-family: essonnes-display, serif;
-	mix-blend-mode: soft-light;
-	font-weight: normal;
-	text-align: center;
-    color: #000000;
+    text-align: center;
     grid-area: content;
-    margin: 0;
+    margin-top: -35vh;
+    position: relative;
     z-index: 2;
-    user-select: none
+    user-select: none;
 }
+
+.frame__content img{
+	height: 70px;
+	width: 70px;
+}
+
+#linkedin-icon {
+	object-fit: cover;
+	object-position: 0px 0px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9);
+	/* margin-bottom: -15px; */
+	height: 70px;
+	width: 70px;
+	margin: 10px;
+}
+
+#linkedin-icon:hover {
+	background: rgba(192, 192, 192, 0.75);
+}
+
+#git-icon {
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9);
+	margin: 10px;
+}
+
+#git-icon:hover {
+	background: rgba(192, 192, 192, 0.75);
+}
+
+#insta-icon {
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 1);
+	margin: 10px;
+}
+
+#insta-icon:hover {
+	background: rgba(255, 255, 255, 0.65);
+}
+
 
 
 @media screen and (min-width: 53em) {
