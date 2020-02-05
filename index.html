@@ -16,21 +16,41 @@
 		<link rel="stylesheet" type="text/css" href="css/slider.css" />
 		<link rel="stylesheet" type="text/css" href="css/portfolio.css" />
 		<link rel="stylesheet" type="text/css" href="css/project.css" />
-
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
-
-
-
-	<body >
 	
-
+	<div class="glider-background" data-glider="visible">
+		<div class="glider-contain multiple">
+			<button class="glider-prev" >
+				<i class="fa fa-chevron-left" ></i>
+			</button>
 			
+			<div class='glider'>
+				
+				
+					
+				</div>
+				
+				
+				<button class="glider-next" >
+					<i class="fa fa-chevron-right" ></i>
+				</button>
+				
+				<div id="dots" class="glider-dots"></div>
+				
+			</div>
+		</div>
+		
+		
+	<body >
+		
+		
+		
 		<div class="frame">
 			<div 
 			id="gl" 
-			data-imageOriginal="img/mount.jpg" 
-			data-imageDepth="img/mount-map.jpg" 
+			data-imageOriginal="img/color_pg.jpg" 
+			data-imageDepth="img/background-map.jpg" 
 			data-horizontalThreshold="35" 
 			data-verticalThreshold="15">
 		</div>
@@ -38,174 +58,83 @@
 	
 	<nav class="nav">
 		<div class="container">
-							<div class="logo">
-								<a>Woodford</a>
-							</div>
-							<div id="mainListDiv" class="main_list">
-								<ul class="navlinks">
-									<li><a href="#aboutLanding" data-nav="about" >about</a></li>
-									<li><a href="#portfolioSection" data-nav="portfolio" >portfolio</a></li>
-									<li><a href="#project-section" >projects</a></li>
-									<li><a href="#art-section" >art</a></li>
-									<li><a href="Danny_Woodford_resume.pdf" data-nav="resume" target="_blank" >resume</a></li>
-									<li><a href="#contactSection" data-nav="contact" >contact</a></li>
-								</ul>
-							</div>
-							<span class="navTrigger">
-								<i></i>
-								<i></i>
-								<i></i>
-							</span>
-						</div>
-					</nav>
-					
-					<div class="frame__content">
-						<a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank"><img id='linkedin-icon' src="img/linkedin-icon.png" alt="linkedin icon"></a>
-						<a href="https://github.com/dannyWoodford" target="_blank"><img id='git-icon' src="img/github-icon.png" alt="github icon"></a>
-						<a href="https://www.instagram.com/dannywoodford/?hl=en" target="_blank"><img id='insta-icon' src="img/instagram-icon.png" alt="instagram icon"></a>
-					</div>
-					
-					
-					
-				<div id="home">
-					<div id="aboutLanding">
-					</div>
-					<div id="aboutSection">
-						<div id="about-background">
-							<img src="img/curved-border-design.png" alt="background" >
-						</div>
-						<img src="img/profile-photo-2.JPG" alt="profile picture" id="profile-picture">
-
-							<div id="about-text">
-								<h1>About Danny Woodford</h1>
-								<h3>Creative Ruby and JavaScript full stack developer with a propensity for visuals. Formerly renovated houses as a carpenter learning to see big jobs through from start to finish. Created the first cross-discipline collaboration event between DevOps, data science, and UX/UI at the Flatiron School. Art and stand-up comedy taught me both creativity and courage are muscles to be developed, lest they atrophy. </h3>
-							</div>
-					
-					</div>
-
-					<div id="portfolioSection" >
-						<div class="glider-contain multiple">
-								<button class="glider-prev" >
-									<i class="fa fa-chevron-left" ></i>
-								</button>
-
-									<div class='glider'>
-				
-										<div class="portfolio">
-
-											<div class="portfolio-background"  >
-											</div>
-
-												<div class=portfolio-text>
-													<h1 class="portfolio-title">Notflix</h1>
-													<h6 class="portfolio-description">
-														Netflix inspired app is a library of TV shows and movies found on youtube with a smart clean look. hjhjhjhjhjhjhhhjhjhhhhhhhgfjhkfdgkgdskjhldfgjhfdkjhg
-													</h6>
-													
-													<div class="portfolio-links">
-														<a href="https://github.com/dannyWoodford/3D-spotify-visualizer-" target="_blank">Github</a> |
-														<a href="https://www.linkedin.com/feed/update/urn:li:activity:6611441975008735232/" target="_blank">Demo</a>
-													</div>
-													
-												</div>
-
-										</div>
-										
-										<div class="portfolio">
-
-											<div class="portfolio-background" style="background:  url(img/spot.gif) no-repeat center center fixed; background-size: contain;"></div>
-
-												<div class=portfolio-text>
-													<h1 class="portfolio-title">Spotify 3D music Visualizer </h1>
-													<h6 class="portfolio-description">This music visualizer connects to your spotify account, allowing it to respond dynamicly to your songs in a 3D space
-													</h6>
-													
-													<div class="portfolio-links">
-														<a href="https://github.com/dannyWoodford/3D-spotify-visualizer-" target="_blank">Github</a> |
-														<a href="https://www.linkedin.com/feed/update/urn:li:activity:6611441975008735232/" target="_blank">Demo</a>
-													</div>
-													
-												</div>
-										</div>
-										
-										
-
-									</div>
-									
-
-								<button class="glider-next" >
-									<i class="fa fa-chevron-right" ></i>
-								</button>
-							
-							<div id="dots" class="glider-dots"></div>
-
-						</div>
-
-					</div>
-
-
-
-
-					<div id="project-section">
-						<div id="project-background">
-							<img src="img/curved-border-design.png" alt="background" >
-						</div>
-
-						<div id="content">
-							<div class='project-header'> Projects</div>
-							
-							<div class="project-container"></div>
-							
-							<div class="project-list">
-								
-							</div>
-						</div>
-					</div>
-
-
-
-
-					<div id="art-section">
-						<div id="art-background">
-							<img src="img/curved-border-design.png" alt="background" >
-						</div>
-					</div>
-					
-
-
-
-					<div id="contactSection">
-						<h3>Greater New York area | 908-907-8680 | <a target="_blank">Daniel.woodford.g@gmail.com </a> | 
-							<a href="https://github.com/dannyWoodford" target="_blank">Github</a> | <a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank" >Linkedin</a> 
-						</h3>
-					</div>
-
-				</div>
-
-			
-
-		
-
-		
-
-
-
-		<script src="js/projects.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/glider.min.js"></script>
-		<script src="js/slider.js"></script>
+			<div class="logo">
+				<a>Woodford</a>
+			</div>
+			<div id="mainListDiv" class="main_list">
+				<ul class="navlinks">
+					<li><a href="#aboutLanding" data-nav="about" >about</a></li>
+					<li><a href="#portfolioSection" data-nav="portfolio" >portfolio</a></li>
+					<li><a href="Danny_Woodford_resume.pdf" data-nav="resume" target="_blank" >resume</a></li>
+					<li><a href="#contactSection" data-nav="contact" >contact</a></li>
+				</ul>
+			</div>
+			<span class="navTrigger">
+				<i></i>
+				<i></i>
+				<i></i>
+			</span>
+		</div>
+	</nav>
 	
-	<!-- Function used to shrink nav bar removing paddings and adding black background -->
-		<script>
-			$(window).scroll(function() {
-				if ($(document).scrollTop() > 50) {
-					$('.nav').addClass('affix');
-				} else {
-					$('.nav').removeClass('affix');
-				}
-			});
-		</script>
-		<script src="js/app.js"></script>
+	<div class="frame__content">
+		<a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank"><img id='linkedin-icon' src="img/linkedin-icon.png" alt="linkedin icon"></a>
+		<a href="https://github.com/dannyWoodford" target="_blank"><img id='git-icon' src="img/github-icon.png" alt="github icon"></a>
+		<a href="https://www.instagram.com/dannywoodford/?hl=en" target="_blank"><img id='insta-icon' src="img/instagram-icon.png" alt="instagram icon"></a>
+	</div>
+	
+	
+	
+	<div id="home">
+		<div id="aboutLanding">
+		</div>
+		<div id="aboutSection">
+			<div id="about-background">
+				<img src="img/curved-border-design.png" alt="background" >
+			</div>
+			<img src="img/profile-photo-2.JPG" alt="profile picture" id="profile-picture">
+			
+			<div id="about-text">
+				<h1>About Danny Woodford</h1>
+				<h3>Creative Ruby and JavaScript full stack developer with a propensity for visuals. Formerly renovated houses as a carpenter learning to see big jobs through from start to finish. Created the first cross-discipline collaboration event between DevOps, data science, and UX/UI at the Flatiron School. Art and stand-up comedy taught me both creativity and courage are muscles to be developed, lest they atrophy. </h3>
+			</div>
+			
+		</div>
+		
+		<div id="portfolioSection" >
+			
+			<div class='project-list'>
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		<div id="contactSection">
+			<h3>Greater New York area | 908-907-8680 | <a target="_blank">Daniel.woodford.g@gmail.com </a> | 
+				<a href="https://github.com/dannyWoodford" target="_blank">Github</a> | <a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank" >Linkedin</a> 
+			</h3>
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/projects.js"></script>
+	<script src="js/glider.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/app.js"></script>
 	</body>
 </html>
+
+
+

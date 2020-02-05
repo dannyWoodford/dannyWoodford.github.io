@@ -5,12 +5,12 @@
     width: 100vw;
     color: white;
     top: 900px;
-    height: 3880px;
+    height: 3000px;
     position: absolute;
     z-index: 11;
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 3% 21% 21% 21% 21% 3%;
+    grid-template-rows: 3% 20% 67% 8% 2%;
 }
 
 
@@ -76,75 +76,9 @@
     grid-column-end: 3; */
     grid-column: 2;
     grid-row: 3;
-    height: 100%;
+    height: 80%;
+    margin-top: 10%;
 }
-
-
-
-
-
-
-
-
-
-#project-section {
-    width: 100%;
-    height: 100%;
-    grid-row: 4;
-    grid-column: 2;
-    /* background-color: rgb(227,159,45); */
-    
-}
-
-
-#project-background{
-    margin-top: 8%;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    z-index: -2;
-    height: 17%;
-    width: 90%;
-}
-
-
-#project-background img{
-    opacity: 0.7;
-    filter: grayscale(90%);
-    height: 100%;
-    width: 100%;
-}
-
-
-
-
-
-#art-section {
-    width: 100%;
-    height: 100%;
-    grid-row: 5;
-    grid-column: 2;
-}
-
-#art-background{
-    margin-top: 8%;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    z-index: -2;
-    height: 17%;
-    width: 90%;
-}
-
-
-#art-background img{
-    opacity: 0.7;
-    filter: grayscale(90%);
-    height: 100%;
-    width: 100%;
-}
-
-
-
-
 
 
 
@@ -152,9 +86,14 @@
 
 
 #contactSection {
+    background-image: url('/img/color_pg.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
     width: 100%;
-    grid-row: 6;
+    grid-row: 4;
     grid-column: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
     z-index: 12;
     display: flex;
     justify-content: center;
@@ -163,8 +102,8 @@
 
 #contactSection h3 {
     position: absolute;
-    bottom: 0;
-    margin-bottom: 0%;
+    /* bottom: 0;
+    margin-bottom: 0%; */
     font-size: 4vh;
     background-color: rgba(0,0,0,0.3);
     user-select: text

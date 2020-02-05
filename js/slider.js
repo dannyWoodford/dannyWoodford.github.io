@@ -1,5 +1,8 @@
-new Glider(document.querySelector('.glider'), {
+
+
+const SLIDER = new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
+    slidesToScroll: 1,
     draggable: true,
     scrollLock: true,
     dots: '#dots',
@@ -8,4 +11,6 @@ new Glider(document.querySelector('.glider'), {
         next: '.glider-next'
     }
 })
+
+
 

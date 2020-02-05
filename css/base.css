@@ -18,7 +18,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
-    height: 4780px;
+    height: 120%;
     width: 100vw;
     position: absolute;
     z-index: -1;

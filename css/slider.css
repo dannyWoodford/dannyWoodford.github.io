@@ -1,12 +1,33 @@
-.glider-contain {
+.glider-background {
+    visibility: hidden;
+    position: fixed;
+    z-index: 140;
     height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
+.glider-background.active  {
+    visibility: visible;
+    position: fixed;
+    z-index: 140;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.glider-contain {
+    position: fixed;
+    z-index: 150;
+    margin-top: 0;
+    margin-left: 20vw;
+    height: 90%;
+    width: 60vw;
+}
+
+
 .glider {
-    margin-top: 100px;
-    
-    height: 80%;
-    /* width: 90% */
+    height: 100%;
 }
 
 .glider-track {
