@@ -17,7 +17,7 @@ let projects = [
         language: "JavaScript / React / Ruby on Rails",
         github: "https://github.com/dannyWoodford/3D-spotify-visualizer-",
         demo: "https://www.linkedin.com/feed/update/urn:li:activity:6611441975008735232/",
-        image: "",
+        image: "img/3d-spot-img.png",
         gif: "https://thumbs.gfycat.com/OddShadowyKiwi-mobile.mp4",
     },
     {
@@ -27,7 +27,7 @@ let projects = [
         language: "JavaScript / React / Ruby on Rails",
         github: "https://github.com/jwsharpe/ZiehbareStimmeLeinwand",
         demo: "",
-        image: "img/Ziehbare-Stimme-Leinwand-background.png",
+        image: "img/ZSL-img.png",
         gif: "",
     },
     {
@@ -37,8 +37,18 @@ let projects = [
         language: "JavaScript / Ruby on Rails",
         github: "https://github.com/TenNga/Maze-Game-Front-End",
         demo: "https://pure-reaches-70099.herokuapp.com/",
-        image: "img/Labyrinth_logo.png",
-        gif: "",
+        image: "img/Labyrinth-img.png",
+        gif: "https://thumbs.gfycat.com/LinearJovialCoelacanth-mobile.mp4",
+    },
+    {
+        id: 5,
+        name: "React/Canvas infinite spinner",
+        description: 'Early exploration of canvas in React. Every mouse click changes a few variables to create a unique pattern.',
+        language: "React / Canvas",
+        github: "https://github.com/dannyWoodford/React-Canvas_infinite_spinner",
+        demo: "https://thumbs.gfycat.com/ExaltedMistyAmphibian-mobile.mp4",
+        image: "img/canvas-react-spinner.png",
+        gif: "https://thumbs.gfycat.com/ExaltedMistyAmphibian-mobile.mp4",
     },
 ]
 
@@ -57,8 +67,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 <div data-id="${project.id}" class="project-item">
                 <img class="project-item-background" src=${project.image} alt="project cover">
                     <div class="info-on-hover">
-                        <h1 class="project-title">${project.name}</h1>
-                        <button data-button="button">Learn More</button>
+                        <button data-button="button"><h1 data-button2="button2" class="project-title">${project.name}</h1>Learn More</button>
                     </div>
                 </div>
                 `
@@ -127,6 +136,17 @@ projectSection.addEventListener("click", (event) => {
         SLIDER.scrollItem(projectId, true)
         toggleGlider() 
     }  
+
+    if(event.target.dataset.button2 === 'button2'){
+        console.log(projectId)
+        console.log(SLIDER)
+        
+        
+        SLIDER.scrollItem(projectId, true)
+        toggleGlider() 
+    }  
+
+
 })
 
 

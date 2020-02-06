@@ -9,8 +9,8 @@
     position: absolute;
     z-index: 11;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 3% 20% 67% 8% 2%;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 3% 25% 62% 8% 2%;
 }
 
 
@@ -22,15 +22,17 @@
     grid-row: 2;
     display: inline-table;
     height: 100%;
-    width: 100%;
+    width: 96%;
+    margin-left: 2%;
     background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 #about-background{
     position: absolute;
     z-index: -2;
-    height: 21%;
-    width: 90%;
+    height: 25%;
+    width: 92%;
 }
 
 #about-background img{
@@ -76,9 +78,20 @@
     grid-column-end: 3; */
     grid-column: 2;
     grid-row: 3;
-    height: 80%;
-    margin-top: 10%;
+    height: 100%;
+    /* margin-top: 10%; */
 }
+
+/* #left-column {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: whitesmoke;
+}
+#right-column {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: whitesmoke;
+} */
 
 
 
@@ -86,9 +99,7 @@
 
 
 #contactSection {
-    background-image: url('/img/color_pg.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover;
+    background-color: rgb(1,28,83);
     width: 100%;
     grid-row: 4;
     grid-column: 2;
@@ -104,21 +115,21 @@
     position: absolute;
     /* bottom: 0;
     margin-bottom: 0%; */
-    font-size: 4vh;
-    background-color: rgba(0,0,0,0.3);
+    font-size: 3vw;
+    /* background-color: rgba(0,0,0,0.3); */
     user-select: text
 }
 
 #contactSection h3 a {
     font-weight: bolder;
-    font-size: 4vh;
+    font-size: 3vw;
 }
 
 
 /* -----MEDIA QUERIES------------------------------------------------------------------ */
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:812px) {
     #home {
         width: 100vw;
         color: white;
@@ -177,6 +188,19 @@
         width: 100%
     }
     
+
+    #contactSection {
+        background-image: none;
+        width: 100%;
+        grid-row: 4;
+        grid-column: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        z-index: 12;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
 #contactSection h3 {
     position: absolute;

@@ -1,26 +1,21 @@
 
 .portfolio{
-    display: grid;
-    grid-template-rows: 60% 40%;
+    margin-top: .2%;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.portfolio-background{
+    width: 100%;
+} 
+
 .portfolio-text {
     border-top: 4px solid black;
-    grid-row: 2;
-    height: 100%;
-    width: 60vw;
+    width: 100%;
 }
 
-.portfolio-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-    font-size: 3vw;
-}
 
 .portfolio-description {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 2vw;
@@ -35,11 +30,6 @@
 
 
 
-.portfolio-background{
-    grid-row: 1;
-    margin-top: 0rem;
-    width: 60vw;
-} 
 
 
 
