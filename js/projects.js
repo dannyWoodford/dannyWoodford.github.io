@@ -13,7 +13,7 @@ let projects = [
     {
         id: 2,
         name: "Spotify 3D music Visualizer",
-        description: '3D music visualizer that connects to your Spotify account and allows for web playback',
+        description: '3D music visualizer that connects to your Spotify account and allows for web playback.',
         language: "JavaScript / React / Ruby on Rails",
         github: "https://github.com/dannyWoodford/3D-spotify-visualizer-",
         demo: "https://www.linkedin.com/feed/update/urn:li:activity:6611441975008735232/",
@@ -33,7 +33,7 @@ let projects = [
     {
         id: 4,
         name: "Enter the Labyrinth",
-        description: 'Complete the maze before the fire catches you',
+        description: 'Complete the maze before the fire catches you.',
         language: "JavaScript / Ruby on Rails",
         github: "https://github.com/TenNga/Maze-Game-Front-End",
         demo: "https://pure-reaches-70099.herokuapp.com/",
@@ -55,36 +55,45 @@ document.addEventListener("DOMContentLoaded", (event) => {
             projectList.insertAdjacentHTML("beforeend",
                 `
                 <div data-id="${project.id}" class="project-item">
-                    <h1>${project.name}</h1>
-                    <img class="project-item-background" src=${project.image} alt="project cover">
-                    <button data-button="button">Learn More</button>
+                <img class="project-item-background" src=${project.image} alt="project cover">
+                    <div class="info-on-hover">
+                        <h1 class="project-title">${project.name}</h1>
+                        <button data-button="button">Learn More</button>
+                    </div>
                 </div>
                 `
             )
+        //----------------------------------------------------------------------------------- 
+        // ---------DYNAMIC SLIDE FILL WONT WORK, DOTS AND FORMATING DONT APPEAR CORRECTLY 
+        // BEACUSE Glider.js NPM EVALUATES BEFORE THIS CAN BE INJECTED. I KNOW THIS BECAUSE 
+        // IT APPEARS CORECTLY ON ANY KIND OF RESIZE. I TRIED TO FORCE A REPAINT BUT COULD 
+        // NOT GET IT WORKING AND I DONT LIKE THAT SOLUTION MUCH ANYWAY.----------------------
+        //----------------------------------------------------------------------------------- 
 
-            gliderDiv.insertAdjacentHTML("beforeend", 
-        `
-        <div data-id="${project.id}" class="portfolio">
 
-                <video class="portfolio-background" autoplay muted loop id="myVideo">
-                    <source src=${project.gif} type="video/mp4">
-                </video>
+        //     gliderDiv.insertAdjacentHTML("beforeend", 
+        // `
+        // <div data-id="${project.id}" class="portfolio">
 
-                    <div class="portfolio-text" >
-                        <h1 class="portfolio-title">${project.name}</h1>
-                        <h6 class="portfolio-description">
-                            ${project.description}
-                        </h6>
+        //         <video class="portfolio-background" autoplay muted loop id="myVideo">
+        //             <source src=${project.gif} type="video/mp4">
+        //         </video>
+
+        //             <div class="portfolio-text" >
+        //                 <h1 class="portfolio-title">${project.name}</h1>
+        //                 <h6 class="portfolio-description">
+        //                     ${project.description}
+        //                 </h6>
                         
-                        <div class="portfolio-links">
-                            <a href=${project.github} target="_blank">Github</a> |
-                            <a href=${project.demo} target="_blank">Demo</a>
-                        </div>
+        //                 <div class="portfolio-links">
+        //                     <a href=${project.github} target="_blank">Github</a> |
+        //                     <a href=${project.demo} target="_blank">Demo</a>
+        //                 </div>
                         
-                    </div>
+        //             </div>
 
-            </div>
-        `)
+        //     </div>
+        // `)
         })
 
 })
@@ -103,26 +112,19 @@ projectSection.addEventListener("click", (event) => {
 
     
     let proj = event.target.closest('.project-item')
-    console.log(proj)
+    // console.log(proj)
 
-    projectId = proj.dataset.id
-    console.log(projectId)
-    console.log(SLIDER)
-
-
-    // pro = (projectId) => {
-        
-    //     projects.map((p) => {
-    //         if(p.id === parseInt(projectId)){
-    //             return p
-    //         }
-    //     })
-    // }
-    // console.log(pro) 
+    projectId = parseInt(proj.dataset.id) - 1
+    // console.log(projectId)
+    // console.log(SLIDER)
  
 
     if(event.target.dataset.button === 'button'){
-        SLIDER.scrollItem(projectId)
+        console.log(projectId)
+        console.log(SLIDER)
+        
+        
+        SLIDER.scrollItem(projectId, true)
         toggleGlider() 
     }  
 })
@@ -146,3 +148,9 @@ gliderBackground.addEventListener("click", (event) => {
     function toggleGlider() {
         $( ".glider-background" ).toggleClass( "active" )
     }
+
+    // $(function() {
+    //     $(".project-item").hover( function() {
+    //         $('.info-on-hover').slideUp(500)
+    //     })
+    // })

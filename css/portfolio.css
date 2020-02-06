@@ -1,12 +1,12 @@
 
 .portfolio{
     display: grid;
-    grid-template-rows: 65% 40%;
+    grid-template-rows: 60% 40%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .portfolio-text {
     border-top: 4px solid black;
-    background-color: rgba(0, 0, 0, 0.8);
     grid-row: 2;
     height: 100%;
     width: 60vw;
