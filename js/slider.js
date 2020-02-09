@@ -14,3 +14,7 @@ const SLIDER = new Glider(document.querySelector('.glider'), {
 
 
 
+
+
+
+

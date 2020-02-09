@@ -147,6 +147,22 @@ projectSection.addEventListener("click", (event) => {
     }  
 
 
+        $("body").keydown(function(e) {
+            if(e.keyCode == 37) { // left
+                console.log("left",projectId, projects.length)
+                    if (projectId > 0){
+                        SLIDER.scrollItem(projectId -= 1, true)
+                    }
+                }
+                else if(e.keyCode == 39) { // right
+                    console.log("right", projectId, projects.length)
+                    if (projectId < projects.length-1){
+                        SLIDER.scrollItem(projectId += 1, true)
+                    }
+            }
+          });
+
+
 })
 
 
@@ -174,3 +190,5 @@ gliderBackground.addEventListener("click", (event) => {
     //         $('.info-on-hover').slideUp(500)
     //     })
     // })
+
+
