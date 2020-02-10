@@ -7,5 +7,5 @@ $('.navTrigger').click(function () {
         $('.navlinks').click(function() {
             $("#mainListDiv").toggleClass("show_list");
             $(".navTrigger").toggleClass('active');
-            $("#mainListDiv").fadeOut();
+            // $("#mainListDiv").fadeOut();
         })

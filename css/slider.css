@@ -13,7 +13,7 @@
     z-index: 140;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 0, 0, 0.803);
 }
 
 .glider-contain {
@@ -82,16 +82,16 @@
         z-index: 140;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.803);
+        background-color: rgba(119, 119, 119, 0.95);
     }
     
     .glider-contain {
         position: fixed;
         z-index: 150;
-        margin-top: 15vw;
+        margin-top: 25vw;
         margin-left: 2vw;
-        height: 70%;
-        width: 96vw;
+        height: 75%;
+        width: 96%;
     }
     
     
@@ -134,3 +134,121 @@
     }
 
 }
+
+
+
+
+
+.portfolio{
+    margin-top: .2%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-background{
+    width: 100%;
+} 
+
+.portfolio#cross-colab-div {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: grid;
+    /* align-self: center; */
+}
+
+.portfolio #cross-colab {
+    height: 100%;
+    opacity: .96;
+    filter: brightness(20%);
+    position: absolute;
+    z-index: -1;
+}
+
+.portfolio#cross-colab-div .portfolio-text{
+    display: flex;
+    border-top: none;
+    font-size: 13vw;
+}
+.portfolio#cross-colab-div .portfolio-text .portfolio-description{
+    font-size: 2.5vw;
+}
+
+.portfolio-text {
+    border-top: 4px solid black;
+    width: 100%;
+}
+
+
+.portfolio-description {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2vw;
+}
+
+.portfolio-links {
+    position: fixed;
+    padding-left: 1%;
+    bottom: 0%;
+    font-size: 30px;
+} 
+
+.slider-exit {
+display: none;}
+
+
+
+@media screen and (max-width:812px) {
+
+.portfolio{
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.slider-exit {
+    display: block;  
+    position: absolute;
+    z-index: 151;
+    right: 0;
+    /* margin-right: 2%; */
+    height: 30px;
+    width: 30px;
+}
+
+.slider-exit img {
+    filter: brightness(150%)
+}
+
+/* .portfolio img {
+    height: 200px;
+} */
+
+.portfolio-background{
+    width: 100%;
+} 
+
+.portfolio-text {
+    border-top: 4px solid black;
+    width: 100%;
+}
+
+
+.portfolio-description {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 7vw;
+}
+
+.portfolio-links {
+    position: fixed;
+    padding-left: 1%;
+    bottom: 0%;
+    font-size: 30px;
+} 
+}
+
+
+
+
+
+

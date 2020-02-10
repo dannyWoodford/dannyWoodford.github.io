@@ -174,7 +174,7 @@ a:focus {
 		align-content: space-between;
 		width: 100vw;
 		max-width: none;
-		height: 100vh;
+		/* height: 100vh; */
 		pointer-events: none;
 		grid-template-columns: 100%;
 		grid-template-rows: auto auto auto;

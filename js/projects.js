@@ -42,6 +42,16 @@ let projects = [
     },
     {
         id: 5,
+        name: "Flatiron Cross-Discipline Collaboration Event",
+        description: "While there I started and lead the first cross-discipline collaboration event bringing students from developer, data science, and UX/UI tracks together to preform mock projects. Through these projects the students learned what each others role does and how they would interact with one another. Of the 60 odd students involved several groups, as well as my own, have continued to bring there mock projects to life post graduation.",
+        language: "",
+        github: "",
+        demo: "",
+        image: "img/cross-colab.jpg",
+        gif: "https://thumbs.gfycat.com/LinearJovialCoelacanth-mobile.mp4",
+    },
+    {
+        id: 6,
         name: "React/Canvas infinite spinner",
         description: 'Early exploration of canvas in React. Every mouse click changes a few variables to create a unique pattern.',
         language: "React / Canvas",
@@ -64,9 +74,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             projectList.insertAdjacentHTML("beforeend",
                 `
-                <div data-id="${project.id}" class="project-item">
+                <div data-id="${project.id}" class="project-item" data-mobile="mobileSize">
                 <img class="project-item-background" src=${project.image} alt="project cover">
-                    <div class="info-on-hover">
+                    <div class="info-on-hover" data-mobile="mobileSize">
                         <button data-button="button"><h1 data-button2="button2" class="project-title">${project.name}</h1>Learn More</button>
                     </div>
                 </div>
@@ -119,14 +129,24 @@ let projectId
 
 projectSection.addEventListener("click", (event) => {
 
-    
-    let proj = event.target.closest('.project-item')
-    // console.log(proj)
+        let proj = event.target.closest('.project-item')
+        projectId = parseInt(proj.dataset.id) - 1
 
-    projectId = parseInt(proj.dataset.id) - 1
-    // console.log(projectId)
-    // console.log(SLIDER)
- 
+        const w = window.innerWidth
+        document.documentElement.clientWidth
+        document.body.clientWidth;
+
+        console.log(typeof w)
+
+
+    if(event.target.dataset.mobile === 'mobileSize' && w < 1024){
+        console.log(projectId)
+        console.log(SLIDER)
+        
+        
+        SLIDER.scrollItem(projectId, true)
+        toggleGlider() 
+    }  
 
     if(event.target.dataset.button === 'button'){
         console.log(projectId)
