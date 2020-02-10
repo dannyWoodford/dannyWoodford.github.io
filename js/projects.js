@@ -171,9 +171,12 @@ projectSection.addEventListener("click", (event) => {
 const gliderBackground = document.querySelector(".glider-background")
 
 gliderBackground.addEventListener("click", (event) => {
+    console.log(event.target.className)
     if(event.target.dataset.glider === 'visible') {
-            toggleGlider()
-        }
+        toggleGlider()
+    } else if (event.target.className === "slider-exit"){
+        toggleGlider()
+    }
     })
 // ----click away to exit slider------------------------------------------------------
 

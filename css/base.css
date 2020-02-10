@@ -18,7 +18,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
-    height: 120%;
+    height: 110%;
     width: 100vw;
     position: absolute;
     z-index: -1;
@@ -172,7 +172,7 @@ a:focus {
 		left: 0;
 		display: grid;
 		align-content: space-between;
-		width: 100%;
+		width: 100vw;
 		max-width: none;
 		height: 100vh;
 		pointer-events: none;
@@ -190,7 +190,7 @@ a:focus {
 
 
 @media screen and (max-width:768px) {
-	.W {
+	/* .W {
 		position: relative;
 		z-index: 1;
 		margin-top: -45vh;
@@ -201,7 +201,7 @@ a:focus {
 		font-weight: normal;
 		text-align: center;
 		color: #c2ba8b;
-	}
+	} */
 
 }
 

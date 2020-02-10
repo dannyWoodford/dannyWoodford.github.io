@@ -113,10 +113,7 @@
 
 #contactSection h3 {
     position: absolute;
-    /* bottom: 0;
-    margin-bottom: 0%; */
     font-size: 3vw;
-    /* background-color: rgba(0,0,0,0.3); */
     user-select: text
 }
 
@@ -134,12 +131,12 @@
         width: 100vw;
         color: white;
         top: 900px;
-        height: 3480px;
+        height: 4000px;
         position: absolute;
         z-index: 11;
         display: grid;
         grid-template-columns: 5% 90% 5%;
-        grid-template-rows: 3% 20% 20% 20% 20% 7%;
+        grid-template-rows: 3% 33% 62% 2%;
     }
 
 
@@ -148,6 +145,7 @@
         grid-column: 2;
         grid-row: 2;
         display: inline-table;
+        margin-left: 0%;
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.4);
@@ -156,7 +154,7 @@
     #about-background{
         position: absolute;
         z-index: -2;
-        height: 35%;
+        height: 33%;
         width: 90%;
     }
 
@@ -181,7 +179,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-top: 25%;
+        margin-top: 30%;
         padding: 5%;
         font-size: 3vh ;
         word-spacing: 5px;
@@ -190,10 +188,10 @@
     
 
     #contactSection {
+        background-color: rgba(255, 255, 255, 0);
         background-image: none;
         width: 100%;
         grid-row: 4;
-        grid-column: 2;
         grid-column-start: 1;
         grid-column-end: 4;
         z-index: 12;
@@ -202,17 +200,16 @@
         text-align: center;
     }
 
-#contactSection h3 {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0%;
-    font-size: 7vw;
-    background-color: rgba(0,0,0,0.3);
-    user-select: text
-}
+    #contactSection h3 {
+        position: absolute;
+        bottom: 1%;
+        font-size: 7vw;
+        background-color: rgba(25,44,103, .8);
+        user-select: text
+    }
 
-#contactSection h3 a {
-    font-weight: bolder;
-    font-size: 7vw;
-}
+    #contactSection h3 a {
+        font-weight: bolder;
+        font-size: 7vw;
+    }
 } 

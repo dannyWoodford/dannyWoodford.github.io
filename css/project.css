@@ -31,7 +31,7 @@
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.363);
     border: none;
-    font-size: 1.6em;
+    font-size: 2vw;
     outline: none;
 }
 
@@ -56,3 +56,27 @@
     visibility: visible;
 }
 
+
+
+@media screen and (max-width:812px) {
+
+    .project-list {
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* align-items: stretch; */
+    }
+
+    .project-item {
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        margin: 1vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

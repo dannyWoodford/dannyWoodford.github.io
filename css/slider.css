@@ -60,3 +60,77 @@
 .glider-dots {
     bottom: 100;
 }
+
+
+
+
+
+@media screen and (max-width:812px) {
+
+    .glider-background {
+        visibility: hidden;
+        position: fixed;
+        z-index: 140;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.603);
+    }
+    
+    .glider-background.active  {
+        visibility: visible;
+        position: fixed;
+        z-index: 140;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.803);
+    }
+    
+    .glider-contain {
+        position: fixed;
+        z-index: 150;
+        margin-top: 15vw;
+        margin-left: 2vw;
+        height: 70%;
+        width: 96vw;
+    }
+    
+    
+    .glider {
+        height: 100%;
+        width: 92vw;
+    }
+    
+    .glider-track {
+        height: 100%;
+    }
+    
+    .glider-prev {
+        display: none;
+        /* color: white;
+        left: -40px;
+        right: auto;
+        grid-column: 1; */
+        /* background-color: rgba(0, 0, 0, 0.3);
+        padding-left: 10px;
+        padding-right: 1px;
+        padding-top: 100px;
+        padding-bottom: 100px; */
+    }
+    
+    .glider-next {
+        display: none;
+        /* color: white;
+        right: -40px;
+        left: auto; */
+        /* background-color: rgba(0, 0, 0, 0.3);
+        padding-right: 10px;
+        padding-left: 1px;
+        padding-top: 100px;
+        padding-bottom: 100px; */
+    }
+    
+    .glider-dots {
+        bottom: 100;
+    }
+
+}
