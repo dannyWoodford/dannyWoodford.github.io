@@ -180,7 +180,7 @@ projectSection.addEventListener("click", (event) => {
                         SLIDER.scrollItem(projectId += 1, true)
                     }
             }
-          });
+        });
 
 
 })
@@ -197,7 +197,7 @@ gliderBackground.addEventListener("click", (event) => {
     } else if (event.target.className === "slider-exit"){
         toggleGlider()
     }
-    })
+})
 // ----click away to exit slider------------------------------------------------------
 
 

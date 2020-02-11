@@ -13,13 +13,20 @@
     grid-template-rows: 3% 25% 62% 8% 2%;
 }
 
+#about-text #art-link {
+    color: #313d6eb7;
+}
 
+#about-text #art-link:hover {
+    color: white;
+}
 
 
 
 #aboutSection {
     grid-column: 2;
-    grid-row: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
     height: fit-content;
     width: 96%;
     margin-left: 2%;
