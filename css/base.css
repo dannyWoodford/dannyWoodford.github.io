@@ -102,7 +102,7 @@ a:focus {
 .frame__content {
     text-align: center;
     grid-area: content;
-    margin-top: -35vh;
+    margin-top: -30vh;
     position: relative;
     z-index: 2;
     user-select: none;
@@ -114,7 +114,7 @@ a:focus {
 }
 
 #name-title {
-	padding-top: 40px;
+	
 	width: 100%;
 	display: flex;
     flex-direction: column;
@@ -125,7 +125,7 @@ a:focus {
 	width: 50%;
 	font-size: 3.5vw;
 	border-bottom: 3px solid rgba(255, 255, 255, 0.753);
-	color: rgba(255, 255, 255, 0.863);
+	color: rgb(255, 255, 255);
 }
 
 #name p {
@@ -134,7 +134,7 @@ a:focus {
 
 #title {
 	width: 40%;
-	color: rgba(204, 204, 204, 0.8);
+	color: rgba(255, 255, 255, 0.8);
 	font-size: 2vw;
 	/* border-top: 3px solid rgb(156, 156, 156); */
 }
