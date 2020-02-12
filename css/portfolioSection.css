@@ -1,11 +1,11 @@
 
 .project-list {
-    margin-top: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     height: fit-content;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* align-items: stretch; */
 }
 
 .project-item {
@@ -17,6 +17,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: -2px 4px 8px 7px #1d1d1d81;  
+    box-shadow: -2px 4px 8px 7px #1d1d1d81; 
 }
 
 .project-item .info-on-hover {

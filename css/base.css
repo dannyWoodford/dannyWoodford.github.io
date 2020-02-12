@@ -14,6 +14,8 @@ body {
 	--color-link-hover: rgb(255, 255, 255);
 	color: #ffffff;
 	background-image: url("https://www.designbolts.com/wp-content/uploads/2012/12/White-Gradient-Squares-Seamless-Patterns-For-Website-Backgrounds.jpg");
+	background-repeat: repeat;
+	background-size: cover;
 	font-family: moderno-fb, "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -96,18 +98,6 @@ a:focus {
 	justify-content: center;
 }
 
-.W {
-	position: relative;
-	z-index: 1;
-	margin-top: -75vh;
-    user-select: none;
-	font-size: 90vh;
-	font-family: essonnes-display, serif;
-	mix-blend-mode: color-burn;
-	font-weight: normal;
-	text-align: center;
-	color: #c2ba8b;
-}
 
 .frame__content {
     text-align: center;
@@ -204,7 +194,4 @@ a:focus {
 	} */
 
 }
-
-
-
 

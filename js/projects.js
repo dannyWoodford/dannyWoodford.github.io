@@ -43,7 +43,7 @@ let projects = [
     {
         id: 5,
         name: "Flatiron Cross-Discipline Collaboration Event",
-        description: "While there I started and lead the first cross-discipline collaboration event bringing students from developer, data science, and UX/UI tracks together to preform mock projects. Through these projects the students learned what each others role does and how they would interact with one another. Of the 60 odd students involved several groups, as well as my own, have continued to bring there mock projects to life post graduation.",
+        description: "While at Flatiron I started and lead the first cross-discipline collaboration event bringing students from developer, data science, and UX/UI tracks together to preform mock projects. Through these projects the students learned what each others role does and how they would interact with one another. Of the 60 odd students involved several groups, as well as my own, have continued to bring there mock projects to life post graduation.",
         language: "",
         github: "",
         demo: "",

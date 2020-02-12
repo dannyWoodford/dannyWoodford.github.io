@@ -14,16 +14,12 @@
 		<link rel="stylesheet" type="text/css" href="css/glider.min.css" />
 		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/slider.css" />
-		<link rel="stylesheet" type="text/css" href="css/project.css" />
+		<link rel="stylesheet" type="text/css" href="css/portfolioSection.css" />
 		<link rel="stylesheet" type="text/css" href="css/art.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 
-
-
-
-	
-
+	<body >
 
 
 
@@ -179,20 +175,23 @@
 		</div>
 	</div>
 		
+
+
+	
 		
-	<body >
+
 		
 		
 		
 		<div class="frame">
 			<div 
-			id="gl" 
-			data-imageOriginal="img/snow-3.jpg" 
-			data-imageDepth="img/snow-map-2.png" 
-			data-horizontalThreshold="50" 
-			data-verticalThreshold="40">
+				id="gl" 
+				data-imageOriginal="img/snow-3.jpg" 
+				data-imageDepth="img/snow-map-2.png" 
+				data-horizontalThreshold="50" 
+				data-verticalThreshold="40">
+			</div>
 		</div>
-	</div>
 	
 	
 	<nav class="nav">
@@ -205,7 +204,7 @@
 					<li><a href="#aboutLanding" data-nav="about" >about</a></li>
 					<li><a href="#portfolioSection" data-nav="portfolio" >portfolio</a></li>
 					<li><a href="Danny_Woodford_resume.pdf" data-nav="resume" target="_blank" >resume</a></li>
-					<li><a href="#contactSection" data-nav="contact" >contact</a></li>
+					<li><a href="#artSection" data-nav="contact" >contact</a></li>
 				</ul>
 			</div>
 			<span class="navTrigger">
@@ -230,21 +229,22 @@
 	<div id="home">
 		<div id="aboutLanding">
 		</div>
+
 		<div id="aboutSection">
 			<img src="img/profile-photo-2.JPG" alt="profile picture" id="profile-picture">
 			
 			<div id="about-background">
-				<img  src="img/curved-border-design.png" alt="background" >
+				<!-- <img  src="img/curved-border-design.png" alt="background" > -->
 			
-			
+
 				<div id="about-text">
 					<h1>About Danny Woodford</h1>
 					<h3>
 						Former carpenter turned full-stack developer in the pursuit of more challenging and ornate work.
                         Renovating and building houses exposed a passion for engineering and building where I learned to see big jobs through from start to finish independently.
-                        I graduated from the Flatiron School where I learned JavaScript, React, Ruby, and Ruby on Rails mainly. While there I started and lead the first cross-discipline collaboration event bringing students from developer, data science, and UX/UI tracks together to preform mock projects. Through these projects, the students learned what each other's role does and how they would interact with one another. 
+                        I graduated from the Flatiron School where I learned JavaScript, React, Ruby, and Ruby on Rails mainly. While there I started and lead the first cross-discipline collaboration event. 
                         In my personal life, I like to write jokes and make <span id="art-link" data-artlink="art-link">art</span> for fun. I am a semi-professional stand-up comedian and part from doing it for the love of it 
-                        I believe to grow as a person you must chase the things that make you inherently anxious such as expressing ideas publicly or overcoming failure, along with creativity, skills I now consider to be some of my greatest strengths. 
+                        I believe to grow as a person you must chase the things that make you inherently anxious such as expressing ideas publicly or overcoming failure, along with creative problem solving, skills I now consider to be some of my greatest strengths. 
 					</h3>
 				</div>
 			</div>
@@ -254,6 +254,7 @@
 		
 		<div id="portfolioSection" >
 			
+
 			<div class='project-list'>
 				<!-- see projects.js -->
 			</div>
@@ -262,12 +263,66 @@
 		
 		<!-- <div id="right-column"></div> -->
 		
+		<div id="artSection">
+
+			<div class="art-content" id="art-landing">
+				<div class="nav-container">
+					<ul class="nav-lists">
+
+						<li class="nav-list" style="--i:0">
+							<div class="bar">
+								
+								<img src="img/art/IMG_0153.JPG">
+								<img src="img/art/IMG_0121.jpg">
+								<img src="img/art/image3.jpeg">
+								<p>A</p>
+							</div>
+						</li>
+
+						<li class="nav-list" style="--i:1">
+							<div class="bar">
+								<img src="img/art/image1.jpg">
+								<img src="img/art/image2.jpeg">
+								<p>R</p>
+							</div>
+						</li>
+
+						<li class="nav-list" style="--i:2">
+							<div class="bar">
+								<img src="img/art/stary_night.JPG">
+								<img src="img/art/octo.JPG">
+								<p>T</p>
+							</div>
+						</li>
+<!-- 
+						<li class="nav-list" style="--i:3">
+							<div class="bar">
+								<img src="https://source.unsplash.com/lxURRFdeWps">
+							</div>
+						</li> -->
+
+					</ul>
+				</div>
+				<div id="contact-container">
+
+					<h3>Greater New York area | </h3>
+					<h3>908-907-8680 | </h3>
+	
+						<p><a target="_blank">Daniel.woodford.g@gmail.com</a> |</p> 
+						<h3><a href="https://github.com/dannyWoodford" target="_blank">Github</a> |</h3>
+						<h3><a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank" >Linkedin</a></h3> 
+			
+				</div>
+			</div>
+		</div>
 		
 		
 		<div id="contactSection">
-			<h3>Greater New York area | 908-907-8680 | <a target="_blank">Daniel.woodford.g@gmail.com </a> | 
-				<a href="https://github.com/dannyWoodford" target="_blank">Github</a> | <a href="https://www.linkedin.com/in/danny-woodford-54b418126/" target="_blank" >Linkedin</a> 
-			</h3>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
+		</div>
+
+		<div id="contactMargin">
+			
 		</div>
 		
 	</div>
@@ -281,6 +336,7 @@
 	<script src="js/projects.js"></script>
 	<script src="js/glider.min.js"></script>
 	<script src="js/slider.js"></script>
+	<script src="js/about.js"></script>
 	<script src="js/art.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/app.js"></script>

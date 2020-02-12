@@ -1,0 +1,150 @@
+
+.art-content{
+    -webkit-box-shadow: -2px 4px 8px 7px #00000081;  
+    box-shadow: -2px 4px 8px 7px #00000081;
+    margin-bottom: 10vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  :root {
+    --total: 3;
+    --offset-width: 12vw;
+    --easing: cubic-bezier(0.8, 0, 0.2, 1);
+    --duration: 0.6s;
+  }
+  
+  .nav-container {
+      visibility: collapse;
+      height: 70vh;
+      width: 100%;
+      overflow: hidden;
+    }
+  
+  .nav-container.active {
+      visibility: visible;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .nav-container .nav-lists {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .nav-container .nav-lists .nav-list {
+      --tx: calc(-100% + var(--offset-width));
+      width: 73vw;
+      height: 100%;
+      position: absolute;
+      z-index: calc(var(--total) - var(--i));
+      margin-left: calc(var(--i) * var(--offset-width));
+      transform: translateX(var(--tx));
+      transition: transform var(--duration) var(--easing);
+      animation-delay: calc(var(--i) * 0.5s);
+      animation-fill-mode: forwards;
+      }
+      
+      .nav-container .nav-lists .nav-list.animate-on-scroll {
+          animation: slide-down 1s cubic-bezier(0.5, 0, 0.3, 1);
+      }
+
+  @keyframes slide-down {
+    from {
+      transform: translateX(var(--tx)) translateY(-100%);
+    }
+    to {
+      transform: translateX(var(--tx)) translateY(0);
+    }
+  }
+
+  .nav-container .nav-lists .nav-list:hover {
+    transform: translateX(-2vw);
+  }
+  .nav-container .nav-lists .nav-list:hover ~ .nav-list {
+    transform: none;
+  }
+  
+.bar {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+ img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nav-list p {
+    font-size: 10rem;
+    background-color: black;
+   
+  }
+
+  @media screen and (max-width:812px) {
+
+    :root {
+      --total: 3;
+      --offset-width: 15vw;
+      --easing: cubic-bezier(0.8, 0, 0.2, 1);
+      --duration: 0.6s;
+    }
+
+    .art-content{
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+
+    .nav-container {
+      visibility: collapse;
+      height: 60vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .nav-container.active {
+      visibility: visible;
+      height: 60vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .nav-list p {
+      font-size: 4rem;
+    }
+
+  }
+
+
+
+
+
+
+
+
