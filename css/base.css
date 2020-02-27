@@ -34,6 +34,16 @@ body {
     position: absolute;
 }
 
+.mobile-background {
+	background-image: url("/img/snow-3.jpg");
+	/* background-color: #cccccc; */
+	visibility: hidden;
+	width: 100vw;
+	height: 96vh;
+	top: 0%;
+    position: absolute;
+}
+
 canvas {
 	display: block;
 }
@@ -181,6 +191,7 @@ a:focus {
 
 
 @media screen and (min-width: 53em) {
+
 	.message {
 		display: none;
 	}
@@ -210,18 +221,13 @@ a:focus {
 
 
 @media screen and (max-width:768px) {
-	/* .W {
-		position: relative;
-		z-index: 1;
-		margin-top: -45vh;
-		user-select: none;
-		font-size: 70vw;
-		font-family: essonnes-display, serif;
-		mix-blend-mode: color-burn;
-		font-weight: normal;
-		text-align: center;
-		color: #c2ba8b;
-	} */
+	.mobile-background{
+		visibility: visible;
+	}
+
+	#gl{
+		display: none;
+	}
 
 }
 
