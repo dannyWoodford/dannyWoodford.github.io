@@ -164,6 +164,15 @@
     z-index: -1;
 }
 
+.portfolio #chrome-background {
+    height: 100%;
+    width: inherit;
+    opacity: .96;
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -1;
+}
+
 .portfolio#cross-colab-div .portfolio-text{
     display: flex;
     border-top: none;
@@ -172,6 +181,8 @@
 .portfolio#cross-colab-div .portfolio-text .portfolio-description{
     font-size: 2.5vw;
 }
+
+
 
 .portfolio-text {
     border-top: 4px solid black;

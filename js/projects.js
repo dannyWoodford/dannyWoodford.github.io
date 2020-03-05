@@ -60,6 +60,26 @@ let projects = [
         image: "img/canvas-react-spinner.png",
         gif: "https://thumbs.gfycat.com/ExaltedMistyAmphibian-mobile.mp4",
     },
+    {
+        id: 7,
+        name: "quick search chrome extension",
+        description: "I made a simple chrome extension for myself so I can highlight text and search for it with a single keypress to be more efficient.",
+        language: "",
+        github: "",
+        demo: "",
+        image: "img/chrome-logo.jpg",
+        gif: "https://thumbs.gfycat.com/LinearJovialCoelacanth-mobile.mp4",
+    },
+    {
+        id: 8,
+        name: "LinkedIn connecter chrome extension",
+        description: "",
+        language: "",
+        github: "",
+        demo: "",
+        image: "img/chrome-logo.jpg",
+        gif: "https://thumbs.gfycat.com/LinearJovialCoelacanth-mobile.mp4",
+    }
 ]
 
 
