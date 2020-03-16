@@ -3,6 +3,7 @@
 			if ($(document).scrollTop() > 50) {
 				$('.nav').addClass('affix');
 			} else {
+				$('.affix').css({'transition': '.5s'})
 				$('.nav').removeClass('affix');
 			}
 		});
